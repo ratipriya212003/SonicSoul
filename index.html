@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonicSoul</title>
+    <link rel="stylesheet" href="music.css" />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">SonicSoul</div>
+
+        <ul>
+          <a class="active" href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#story">
+            <li>Our Story</li>
+          </a>
+          <a href="#video">
+            <li>Album</li>
+          </a>
+          <a href="#subscribe">
+            <li>Subscription</li>
+          </a>
+          <a href="#find">
+            <li>Find Us</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home-section" id="home">
+        <div class="container">
+          <h1>SonicSoul</h1>
+          <h3>
+            Embark on a sonic journey with SonicSoul, where every note tells a
+            story.
+          </h3>
+          <p>
+            "Dive into the captivating world of SonicSoul, where the resonance
+            of passion and soul merge to create a musical journey like no other.
+            Experience the magic as our music comes alive, enveloping you in a
+            soulful embrace that transcends boundaries and ignites the spirit.
+            Welcome to SonicSoul."
+          </p>
+        </div>
+      </section>
+
+      <section class="about-music container" id="story">
+        <h1>And that's how our journey started...</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorum
+          id fugiat provident tempore cumque esse ex molestias quasi aliquam
+          voluptate quos ad perferendis, rerum odio debitis eligendi quidem
+          animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          dolorum id fugiat provident tempore cumque esse ex molestias quasi
+          aliquam voluptate quos ad perferendis.
+        </p>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item">
+              <img
+                src="photo4.jpg"
+                alt="Additional Image 4"
+                style="height: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="photo5.jpg" alt="Additional Image 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="photo6.jpg" alt="Additional Image 6" />
+            </div>
+          </div>
+        </div>
+
+        <div id="more-text" style="display: none">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="photo1.jpg" alt="Additional Image 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="photo2.jpg" alt="Additional Image 2" ">
+              </div>
+              <div class="carousel-item">
+                <img src="photo3.jpg" alt="Additional Image 3" />
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            unde dignissimos aliquid, non, rem sequi eius minus porro esse culpa
+            minima inventore recusandae consectetur fugit vero cumque ipsum?
+            Saepe, aliquam?
+          </p>
+        </div>
+
+        <button class="secondary-btn" onclick="toggleContent()" id="toggle-btn">
+          Read more
+        </button>
+      </section>
+      <section class="video-section" id="video">
+        <div class="container">
+          <h3>A world of entertainment. Available wherever you are.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
+            non velit repellat alias saepe inventore repellendus? Molestias
+            suscipit eos tempora? Quae quaerat cumque in veritatis impedit
+            dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
+            totam ad quas? Ipsam laudantium soluta delectus!
+          </p>
+          <div class="button-container">
+            <button class="secondary-btn" onclick="redirectToMerch()">
+              Our Merchendise
+            </button>
+            <button class="secondary-btn" onclick="redirectToAlbums()">
+              Albums
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <section class="gift-section" id="subscribe">
+          <div class="gift-card">
+            <img src="newsletter.jpg" alt="Not Avail" />
+          </div>
+          <div class="gift-content">
+            <h3>Sign Up For Newsletter!</h3>
+            <p>
+              Looking for the perfect gift for the cinephile or music enthusiast
+              in your life? Give them the gift of endless entertainment with our
+              exclusive gift cards!<br> Whether they're passionate about discovering
+              new movies,binge-watching their favorite TV shows, or exploring
+              the latest music releases, our gift cards offer access to a world
+              of entertainment possibilities.<br> Let them choose from a vast
+              selection of blockbuster films, chart-topping albums, and
+              immersive experiences, ensuring they find something they love.<br>
+              Treat your loved ones to the gift of unforgettable moments and
+              endless enjoyment with our movie and music gift cards.
+            </p>
+            <hr />
+            <div>
+              <button class="secondary-btn" onclick="openLoginPopup()">Sign Up</button>
+            </div>
+            <div id="loginPopup" class="popup">
+              <div class="popup-content">
+                
+                <form>
+                  <label for="username">Username:</label>
+                  <input class="formlogin" type="email" id="usernamedetail" name="username" placeholder="Your Username" required><br><br>
+                  <label for="password">Password:</label>
+                  <input class="formlogin" type="password" id="passworddetail" name="password" placeholder="Your Password" required><br><br>
+                  <input  class="formsubmit" type="submit" onclick="closeLoginPopup()" value="Login">
+                  <input  class="formsubmit" type="submit" onclick="closeLogin()" value="Close">
+                </form>
+              </div>
+            </div>
+          
+          </div>
+        </section>
+        <section class="music-section" id="find">
+          <div class="container">
+            <h2>
+              <span><i class="fa fa-music"></i></span>
+              Connect To Our Music!
+            </h2>
+            <p>
+              Let's keep the rhythm alive! Your support means the world to us.
+              Share our albums with friends and family, and let's spread the joy
+              of music far and wide. Follow us on social media to stay updated
+              on our latest releases, shows, and behind-the-scenes moments.
+              Together, let's create unforgettable musical memories. Thank you
+              for being a part of our musical family!
+            </p>
+            <h4>
+              Connect to us and get instant updates of our Albums on Social
+              Media...
+            </h4>
+            <div class="socialIcons">
+              <div class="socialIcon">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII="
+                  />
+                </a>
+              </div>
+              <div class="socialIcon">
+                <a href="https://open.spotify.com/" target="_blank">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAvJJREFUSEvFlkuoTlEUx3/XMwaK3LwfeU4UA3kMleE1QEJKDIQo72SEgUcJJeISE0WJEDEzElKI0r2Rx72eA1Ii8t7/29ra37bPd8651+1bdfrOd/Ze+7/XWv/137uOGlldjXApC9wVmAaMAAZBm/8b4DlwC/hZNJCiwKOALcBcoG/G4h+Ac8Au4GneBvKAewJbgU1At7zFbPwHsNe9bwO+ZvlUA1YqrwITCwLG0+4BDcDrlH8WsFJ7AxjQTlDv9haYbhyoWCoFrBreBsZ0ENS7PwYmAx/D9VLAJ4Cl/wnUL3MEWFkNWFE+sjbRvM+AaqXnJfDOni/AECvFQPvVf7Vaj8Smv1sGW/1YHPFhYIUNnnJtsbhMbwK9gBnmNz/agJi+MQUscRAZ+tvgPmCDvfczdg+26PrYdwnGA+Au8CICmgTsAWba9xZgZApYaboZOYtkSuXwAjUXic4CJ4Emm6+MqjzauGwC8FAvYaoXAKczAMTIO9aTr5w6SVgUvZ6h9ts98D3vJLXR6cBUE6AuNjYbuBADrwX2R8AXLd1PciJWmVTbhcAi21jKZY2L/kAMvMrV92A0e7Vj7zFgignBaItQLBVD/aOSqIYyleWQqVYMvt4HF6Z6jol8gXImp1yzRS/b6KUEuJh+Jo5YLFS/pkzsvQ88A1RjnUQyEU+sVSa8aQPX3bxldnSG60nBxJUKcil6iYQI403tNc8k9FuVVAhYB8LmBJh302EhIv6OgfVfNVatvX1yAr/E6iaxHwcMC9pDrXHFmKpWlICovvKJTaQSudosVi5JZjMglpY1MX87oLY6HjmLjOOtVElgfeyMQ+KouyItDzeTdSxKAv/KW9nQo/nKoIQk91iUn1Kui0B9B0FFKIGKtBVW7eojEok40tf2mNpmlt1C//HPu+z1NsKsK0E4td1uR7IdQGYL5gH7nY4Nrrf+SIyjeG/KtzOQz8xMFQX2C+iKq36WHusWKlMddY+WXv8qWpOywEXXzZ1XM+A/WJSFH+QeZUoAAAAASUVORK5CYII="
+                  />
+                </a>
+              </div>
+              <div class="socialIcon">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvt1jtoFUEUxvFfUBCCooWNpBGDdtrYiYWNEiLRMmUQUUFQBLVRfGBeRVJEbCzEImWqCKIopAi2goiKiGhlIRZ2aqGie2AX1sFw517u5qbIaZYdznx/zjdnHn16FH094loHr5rza8rqjRjBAXwrLdiO3djUwpLveI34RvzBSzzEr/rctOJ9eICdXfb8I47hTaWbgp/hYJehldwTDP0PPIBPDUEr2R34HD/1ig8X6/q0YfAhLKfgE7ifAY4e2IW9GblpyigWUvBFzGaIXcckTmIK0fG5cQr3UvDNov1vZCgEeLzM24ZbOFuMbciYex53UnBUG1W3ijq4yt2D2/WuXUHkcuVqvbkmcLUVFdcQufWIw2UOwy3mXykOoelOra6Dt5RWn8u0+kLpzD/b6RJmMiuOpjpdrnU7zTVW7Ij5tOIzuJsBXsRgh9spluJxCj6OEG0y4i54lYKjM981SUU/fqTg+H+O/Q3BH+FopZ3eTgFdwtYuwz+Ud/zblcAxvhlH8LV8DMSZHLdKO/EF74tz4SdelA+B33WBNfX0aaeyjnPXK+7YunYn9szqv6QmPx+V5GUqAAAAAElFTkSuQmCC"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="ipad-iphone-img">
+              <img src="ipad-iphone.png" alt="iphone ipad" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-upper">
+        <div class="container">
+          <div class="footer-links">
+            <h4>Shop & Learn</h4>
+            <ul>
+              <li>Music</li>
+              <li>Movies</li>
+              <li>Shows</li>
+              <li>Apps</li>
+              <li>Gift Cards</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>SonicSoul Store</h4>
+            <ul>
+              <li>Find a Store</li>
+              <li>Today at Orange</li>
+              <li>Financing</li>
+              <li>Orange Camp</li>
+              <li>Order Status</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Education & Business</h4>
+            <ul>
+              <li>SonicSoul & Education</li>
+              <li>Shop for Collage</li>
+              <li>SonicSoul & Business</li>
+              <li>Shop for Business</li>
+              <li>Jobs</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About SonicSoul</h4>
+            <ul>
+              <li>Newsroom</li>
+              <li>SonicSoul Leadership</li>
+              <li>Investors</li>
+              <li>Envents</li>
+              <li>Contact SonicSoul</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lower">
+        <p>Copyright © 2024 SonicSoul</p>
+      </section>
+    </footer>
+  </body>
+  <script src="music.js"></script>
+</html>
